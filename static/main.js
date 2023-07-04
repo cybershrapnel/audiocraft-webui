@@ -20,7 +20,7 @@ document.getElementById("text").addEventListener("keydown", function(e) {
     }
 });
 
-var socket = io.connect('http://localhost:5000');
+var socket = io.connect('http://0.0.0.0:5000');
 socket.on('new_file', function(data) {
     var output_filename = data.output_filename;
     var new_file = {
